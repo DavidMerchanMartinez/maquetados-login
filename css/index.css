@@ -1,0 +1,46 @@
+body{
+ margin:0;
+ background-image:url('https://images.pexels.com/photos/1072179/pexels-photo-1072179.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+ background-repeat: no-repeat;
+ background-attachment: fixed;
+ background-size: 100% 100%;
+ 
+}
+.contenedor{
+    width: 100%;
+    height:100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-content: space-evenly;
+    justify-items: center;
+}
+.boton{
+    text-decoration: none;
+    border-radius: 16px;
+    border: 5px solid rgb(107, 11, 11);
+    padding: 40px 80px;
+    background: linear-gradient(rgba(4, 26, 0, 0.705), rgba(10, 192, 19, 0.438),  rgba(4, 26, 0, 0.705));
+    animation-name: colorBoton;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    width: 120px;
+    text-align: center;
+    text-decoration-style:double;
+    color: aliceblue;
+    font-family: 'Agbalumo';
+    font-size: 30px;
+   
+}
+.boton:hover{
+    transform: scale(1.25);
+    background: linear-gradient(rgba(4, 26, 0, 0.90), rgba(10, 192, 19, 0.70),  rgba(4, 26, 0, 0.90));
+}
+
+@keyframes colorBoton{
+    0%{border-color: rgb(1, 35, 1);} 
+    25%{border-color: rgb(2, 50, 2);} 
+    50%{border-color: rgb(2, 70, 2);} 
+    75%{border-color: rgb(2, 50, 2);} 
+    100%{border-color: rgb(2, 40, 2);} 
+}
+
