@@ -14,10 +14,14 @@
 <body>
 
     <header>
-        <button class="boton-login">login</button>
+        <button class="boton-login">Login</button>
     </header>
 
     <div class="contenedor-principal">
+
+        <div class="contenedor-boton-cerrar">
+            <i class="fa-solid fa-x" style="color: #000000;"></i>
+        </div>
 
         <div class="contenedor-formulario-registro">
 
@@ -45,14 +49,14 @@
 
                
                 <label><input type="checkbox"> Estoy de acuerdo con los terminos y condiciones</label>
-                <button class="boton-registro">Registrar</button>
+                <button class="boton boton-registro">Registrar</button>
             
 
             </form>
 
             <div class="parte-inferior-formulario">
-                <label> ya tienes una cuenta? </label>
-                <a href="">login</a>
+                <label> Ya tienes una cuenta? </label>
+                <a class="apartado-register">Login</a>
             </div>
 
         </div>
@@ -60,29 +64,33 @@
 
 
         <div class="contenedor-formulario-login">
-            <h1>login</h1>
+            <h1>Login</h1>
 
             <form action="">
 
-                <label for="email">email</label>
-                <input type="email" name="email" id="">
-                <i class="fa-solid fa-envelope fa-beat"></i>
-
-                <label for="contraseña">contraseña</label>
-                <input type="password" name="contraseña" id="">
-                <i class="fa-solid fa-lock fa-beat"></i>
-
-                <div>
-                    <label><input type="checkbox"> guardar datos</label>
-                    <h3> olvide mi contraseña</h3>
+                <div class="formulario-cajas">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="">
+                    <i class="fa-solid fa-envelope fa-fade"></i>
                 </div>
 
-                <button class="boton-registro">Registrar</button>
+                <div class="formulario-cajas">
+                    <label for="contraseña">Contraseña</label>
+                    <input type="password" name="contraseña" id="">
+                    <i class="fa-solid fa-lock fa-fade"></i>
+                </div>
+
+                <div class="contenedor-checkbox">
+                    <label><input type="checkbox"> Guardar datos</label>
+                    <a href=""> Olvide mi contraseña</a>
+                </div>
+
+                <button class="boton boton-login">login</button>
 
             </form>
             <div class="parte-inferior-formulario">
-                <label> no tienes una cuenta? </h2>
-                    <a href="">registrate</a>
+                <label> No tienes una cuenta? </h2>
+                    <a class="apartado-login">Registrate</a>
             </div>
         </div>
 
@@ -91,5 +99,5 @@
 
 
 </body>
-
+<script src="..\js\login1.js"></script>    
 </html>

@@ -41,11 +41,41 @@ header button{
 header button:hover{
     background: white;
     color: black;
-    border-color: black;
+    border-color: rgba(255, 255, 255, .5);
     transform:scale(1.25);
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.5);
 }
 
+/* clase active para habilitar los formularios */
+
+.contenedor-formulario-registro.active{
+   position: absolute;
+   transform:translateX(0px);
+   transition: .5s ease;
+}
+.contenedor-formulario-login.inactive{
+    position: absolute;
+    transform:translateX(-500px);
+    transition: .5s ease;
+ }
+
+
+ .contenedor-formulario-login.active{
+    position: absolute;
+    transform:translateX(0px);
+    transition: .5s ease;
+ }
+ .contenedor-formulario-registro.inactive{
+     position: absolute;
+     transform:translateX(500px);
+     transition: .5s ease;
+  }
+
+
+/* contenedor principal */
+
 .contenedor-principal{
+
     position: relative;
     width: 30rem;
     height: 35rem;
@@ -56,13 +86,36 @@ header button:hover{
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
   }
+ 
+.contenedor-boton-cerrar{
+   height: 50px;
+   width: 50px;
+   position: absolute;
+   top: -2px;
+   right: -2px;
+   display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(240, 248, 255, 0.979);
+    border: 2px solid rgba(33, 89, 110, 0.733);
+    border-radius: 0 0% 0 50%;
+    cursor:pointer;
+}
+
+/* formulario del registro */
 
 .contenedor-formulario-registro{
     width: 100%;
     padding: 40px;
+    position: absolute;
+    transform:translateX(500px);
+    transition: none;
 }
-.contenedor-formulario-registro h1{
+
+.contenedor-formulario-registro h1,
+.contenedor-formulario-login h1{
     text-align: center;
 }
 
@@ -75,7 +128,8 @@ header button:hover{
 .formulario-cajas label{
     position: absolute;
     color: rgb(255, 255, 255);
-    padding-top: 12px;
+    padding-top: 0;
+    margin-top: 4px;
 }
 
 .formulario-cajas input{
@@ -95,7 +149,7 @@ header button:hover{
     padding-left: 23rem;
 }
 
-.boton-registro{
+.boton{
     justify-items: center;
     margin-top: 40px;
     background: none;
@@ -118,37 +172,23 @@ header button:hover{
     padding-left: 10px;
     text-decoration: none;
     font-size: large;
+    cursor: pointer;
 }
 
+/* contenedor del login  */
 
-
-
-
-
-
-
-
-
-/*
-
-.contenedor-formulario-registro{
-    background-color: antiquewhite;
-    display: grid;
-    grid-template-rows: 6rem 20rem auto;
-    justify-items: center;
-    height: 100%;
-}
-.contenedor-formulario-registro h1{
- margin-top:2rem ;
-}
-.formulario-registro{
-    display: grid;
-    grid-template-rows: repeat(6, 1fr);
-}
-.input{
-    background-color: aqua;
-}
-*/
 .contenedor-formulario-login{
- display: none;
+    width: 100%;
+    padding: 40px;
 }
+.contenedor-checkbox{
+    display:grid;
+    margin-top: 40px;
+}
+
+.contenedor-checkbox a{
+    margin-top: 20px;
+    text-decoration: none;
+    font-weight: 200;
+}
+
