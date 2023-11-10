@@ -13,6 +13,14 @@ background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
+    justify-content: flex-end;
+}
+
+.contenedor-principal img{
+   width: 250px;
+   height: 250px;
+   transform: translateX(-400px);
+   
 }
 .contenedor-formulario{
     border: 2px solid rgb(255, 255, 255);
@@ -23,6 +31,8 @@ background-size: cover;
     grid-template-rows: min-content min-content min-content; 
     justify-content: center;
     backdrop-filter:blur(10px);
+     overflow: hidden; 
+     border-radius:30px 0 0 30px ;
 }
 
 /* botones  */
@@ -60,7 +70,7 @@ background-size: cover;
 
 .iconos{
     justify-self: center;
-    margin: 30px 0 30px 0;
+    margin: 70px 0 50px 0;
 }
 .iconos i{
     font-size: 40px;
@@ -75,7 +85,7 @@ background-size: cover;
 
 .contenedor-formulario .formularios{
     display:flex;
-    width: 100%;
+   justify-content: center;
 }
 
 .formularios .formulario-login,
@@ -83,7 +93,8 @@ background-size: cover;
     display:grid;
     grid-template-rows: min-content;
     width: 500px;
-    margin-top: 20px;
+    justify-self: center;
+    margin-top: 30px;
 }
 .formularios .formulario-login div,
 .formularios .formulario-register div{
@@ -116,9 +127,52 @@ background-size: cover;
 
 
 .formularios .formulario-register{
-    display:none;
+    position: absolute;  
+}
+.formularios .formulario-login{
+     position: absolute;   
 }
 
+.formularios .formulario-login.posicion{
+    transform: translateX(-600px);
+     transition: 0.5s ease; 
+}
+.formularios .formulario-register.posicion{
+    transform: translateX(600px);
+    transition: 0.5s ease;
+}
+.formularios .formulario-login.inposicion,
+.formularios .formulario-register.inposicion{
+    transform: translateX(0px);
+     transition: 0.5s ease; 
+}
+
+/* checkbox y texto */
+.label-final,
+.label-final a{
+    color: aliceblue;
+    margin-bottom: 40px;
+}
+
+/* botones */
+.boton-register,
+.boton-login{
+    width: 250px;
+    height: 60px;
+    border: 1px solid white;
+    border-color: aliceblue;
+    background-color: transparent;
+    border-radius: 24px;
+    justify-self: center;
+    cursor: pointer;
+    color: aliceblue;
+}
+.boton-register:hover,
+.boton-login:hover{
+    border: 1px solid rgb(0, 0, 0);
+    background-color: white;
+    color: black;
+}
 
 
 
