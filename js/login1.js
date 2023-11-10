@@ -22,11 +22,13 @@ apartadoLogin.addEventListener('click',onFormularioRegistro);
         // funciones para cerrar y abrir formulario 
 
         function cerrarContenedorPrincipal(){
-            contPrincipal.style.display = "none";
+            contPrincipal.classList.add("close");
+            contPrincipal.classList.remove("open");
         }
 
         function abrirContenedorPrincipal(){
-            contPrincipal.style.display = "flex";
+            contPrincipal.classList.remove("close");
+            contPrincipal.classList.add("open");
         }
 
         //funciones para cambiar de formulario

@@ -1,0 +1,125 @@
+*{
+
+}
+body{
+margin: 0;
+background-image: url("https://images.pexels.com/photos/7267852/pexels-photo-7267852.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+background-repeat:no-repeat;
+background-size: cover;
+}
+.contenedor-principal{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contenedor-formulario{
+    border: 2px solid rgb(255, 255, 255);
+    height: 89%;
+    width: 500px;
+    padding: 40px;
+    display: grid;
+    grid-template-rows: min-content min-content min-content; 
+    justify-content: center;
+    backdrop-filter:blur(10px);
+}
+
+/* botones  */
+
+.contenedor-formulario .botones{
+    border-radius: 24px;
+    border: 1px solid rgb(255, 255, 255);
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.5);
+    display: flex;
+    justify-content: center;
+    width: 250px;
+    height: 50px;
+    justify-self: center;
+    overflow: hidden;
+    background-color: rgba(209, 77, 36, 0.623);
+}
+
+.contenedor-formulario .botones .boton-cambio{
+    border: none;
+    border-radius: 20px;
+    width: 100%;
+    background: transparent;
+    color: aliceblue;
+}
+.contenedor-formulario .botones .boton-cambio:hover{
+    cursor: pointer;
+}
+.contenedor-formulario .botones .boton-cambio.boton-active{
+    background-color: aliceblue;
+    color: chocolate;
+
+}
+
+/* iconos  */
+
+.iconos{
+    justify-self: center;
+    margin: 30px 0 30px 0;
+}
+.iconos i{
+    font-size: 40px;
+    margin: 0 20px 0 20px;
+}
+.iconos i:hover{
+    transform: scale(1.25);
+    cursor: pointer;
+}
+
+/* formularios */
+
+.contenedor-formulario .formularios{
+    display:flex;
+    width: 100%;
+}
+
+.formularios .formulario-login,
+.formularios .formulario-register{
+    display:grid;
+    grid-template-rows: min-content;
+    width: 500px;
+    margin-top: 20px;
+}
+.formularios .formulario-login div,
+.formularios .formulario-register div{
+    display:grid;
+    grid-template-rows: min-content;
+}
+.formularios .formulario-login div label,
+.formularios .formulario-register div label{
+    color:aliceblue;
+    font-size: 20px;
+    position:fixed;
+
+}
+
+.formularios .formulario-login div label.transition,
+.formularios .formulario-register div label.transition{
+    transform:translateY(-30px);
+}
+.formularios .formulario-login div input,
+.formularios .formulario-register div input{
+    background-color: transparent; 
+    border: none;
+    border-bottom: 2px solid aliceblue;
+    color: aliceblue;
+    height: 30px;
+    margin-bottom:50px ;
+    font-size: 20px;
+    outline: none;
+}
+
+
+.formularios .formulario-register{
+    display:none;
+}
+
+
+
+
+

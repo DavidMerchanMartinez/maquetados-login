@@ -71,11 +71,18 @@ header button:hover{
      transition: .5s ease;
   }
 
+.contenedor-principal.close{
+    transform: scale(0);
+    transition: .5s ease;
+}
+.contenedor-principal.open{
+    transform: scale(1);
+    transition: .5s ease;
+}
 
 /* contenedor principal */
 
 .contenedor-principal{
-
     position: relative;
     width: 30rem;
     height: 35rem;
