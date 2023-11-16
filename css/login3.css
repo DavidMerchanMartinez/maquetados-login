@@ -81,6 +81,7 @@ label{
     justify-items: center;
     border-radius: 24px;
     overflow: hidden;
+    box-shadow: 5px 5px 35px 5px #00575e;
 }
 .contenedor-mensaje{
     background-image: linear-gradient(to bottom, rgb(0, 109, 172),rgb(0, 162, 255));
@@ -149,5 +150,51 @@ justify-content: center;
     transform: translateX(360px);
     transition: 0.5s;
     border-radius: 124px 0 0 124px;
+}
+
+@media (max-width: 400px){
+    /* parte del mensaje contenedor 1 */
+    .contenedor-formularios{
+        width: 20rem;
+         height: 550px;
+         display: flex;
+         flex-direction: column;
+    }
+    .contenedor-mensaje{
+        height: 10rem;
+        width: 100%;
+        border-radius: 0 0 124px 124px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .contenedor-mensaje .mensaje{
+        align-content: end;
+    }
+    .contenedor-mensaje .mensaje .mensaje-cambio{
+        display: none;
+    }
+    .contenedor-mensaje .mensaje button {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    .contenedor-pie-formulario{
+        margin-top: 15px;
+    }
+        /* mensaje animaciones */
+
+        .mensajeActive{
+            position: relative;
+            z-index: 1;
+            transform: translateY(390px);
+            transition: 0.5s;
+            border-radius: 124px 124px 0 0;
+        }
+        /* formulario animaciones */
+        .formActive{
+            transform: translatey(-170px);
+            transition: 0.5s;
+        }
+
 }
 
