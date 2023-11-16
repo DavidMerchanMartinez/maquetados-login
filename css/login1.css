@@ -199,3 +199,31 @@ header button:hover{
     font-weight: 200;
 }
 
+@media (max-width: 400px) {
+    header button {
+        margin-right: 0;
+    }
+    header {
+        justify-content: center;
+    }
+    .contenedor-principal {
+        margin-top: 3rem;
+        position: relative;
+        width: 20rem;
+        height: 32rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+    .boton{
+        margin-left: 19%;
+    }
+    .parte-inferior-formulario {
+    text-align: center;
+    }
+    .contenedor-boton-cerrar {
+        z-index: 1;
+    }
+}
+
