@@ -13,6 +13,7 @@ body{
     grid-template-columns: 1fr 1fr 1fr;
     align-content: space-evenly;
     justify-items: center;
+    position: static;
 }
 .boton{
     text-decoration: none;
@@ -42,5 +43,16 @@ body{
     50%{border-color: rgb(2, 70, 2);} 
     75%{border-color: rgb(2, 50, 2);} 
     100%{border-color: rgb(2, 40, 2);} 
+}
+
+@media (max-width:450px) {
+     .contenedor{
+        grid-template-columns: 1fr;
+    }
+    .boton{
+        
+        padding: 15px 40px;
+        font-size: 15px;
+    }
 }
 
