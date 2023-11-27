@@ -1,0 +1,144 @@
+body{
+   margin: 0;
+   background-image: url("https://img.freepik.com/free-photo/cup-coffee-with-pile-coffee-beans_1112-438.jpg?w=900&t=st=1701113075~exp=1701113675~hmac=c6b7b45f9314a3a3bd26421e285199970e69a31d203124db146a8d01c570acd0");
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: aliceblue;
+    backdrop-filter: brightness(30%);
+    
+}
+
+.inactivo{
+    display: none;
+    animation: salida;
+    animation-duration: 0.5s
+}
+
+.contenedor-principal{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center; 
+    
+}
+
+.formulario-activo{
+transform: translatey(-40px); 
+transition-duration: 1s;
+}
+
+
+.contenedor-izq,
+.contenedor-der{
+    width: 50%;
+    padding: 50px;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+.contenedor-der .login,
+.contenedor-der .register{
+    animation: salida;
+    animation-duration: 2s ;
+}
+
+@keyframes salida {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.contenedor-izq h1{
+    font-size:xxx-large;
+}
+.contenedor-izq p{
+  text-align: justify; 
+  font-size: larger; 
+}
+
+.contenedor-der .login h1,
+.contenedor-der .register h1{
+    font-size: xx-large;
+}
+
+.contenedor-der .login form,
+.contenedor-der .register form{
+    display: grid;
+    margin-top: 30px;
+}
+
+.contenedor-der .login .input-email,
+.contenedor-der .login .input-contraseña,
+.contenedor-der .register .input-name,
+.contenedor-der .register .input-email,
+.contenedor-der .register .input-contraseña{
+   margin-top: 50px ;
+} 
+
+.contenedor-der .login .input-email label,
+.contenedor-der .register form .input-email label,
+.contenedor-der .register form .input-name label,
+.contenedor-der .login .input-contraseña label,
+.contenedor-der .register form .input-contraseña label{
+    position: absolute;
+    margin-left: 20px;
+    margin-top: 11px;
+    font-size: larger;
+    transition-duration: 1s;
+}
+
+.contenedor-der .login .input-email input,
+.contenedor-der .register form .input-email input,
+.contenedor-der .register form .input-name input,
+.contenedor-der .login .input-contraseña input,
+.contenedor-der .register form .input-contraseña input{
+   background-color: transparent;
+    width: 80%;
+    border: 2px solid whitesmoke;
+    border-radius: 26px;
+    height: 40px;
+    cursor: pointer;
+    position: relative;
+    color: aliceblue;
+    padding-left: 20px;
+}
+
+.pie-formulario{
+    margin-top: 20px;
+    text-align: start;
+    margin-left: 60px;
+}
+
+button{
+    justify-self: center;
+    width: 90%;
+    height: 50px;
+    border: none;
+    background: linear-gradient(90deg, #692e04, #2c1708 );
+    border-radius: 26px;
+    color: aliceblue;
+    font-size: large;
+    cursor: pointer;
+}
+p a{
+    text-decoration: none;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: large;
+    margin-left: 20px;
+
+}
+
+/* responsive */
+@media (max-width:450px) {
+    .contenedor-izq{
+        display: none;
+    }
+    .contenedor-der{
+        width: 100%;
+    }
+}
