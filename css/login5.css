@@ -1,0 +1,135 @@
+body{
+    padding: 0;
+    background:linear-gradient(90deg, rgb(2, 41, 43), rgb(1, 82, 87));
+    color: aliceblue;
+}
+h1{
+    margin: 0;
+}
+.contenedor-principal{
+    width: 100%;
+    height: 95vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.contenedor-formulario{
+    width: 450px;
+    height: 380px;
+    background-color: black;
+    border-radius: 26px;
+    box-sizing: border-box;
+    border: 10px;
+    border: 2px solid rgb(23, 171, 179);
+    box-shadow: 0px 0px 15px rgb(23, 171, 179),
+                0px 0px 30px rgb(23, 171, 179),
+                0px 0px 50px rgb(23, 171, 179); 
+    display: flex;            
+    flex-direction: column;
+    align-items: center;
+}
+
+.contenedor-botones{
+    width: 140px;
+    height: 30px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    background-color:rgb(1, 82, 87) ;
+    border-radius: 26px;
+}
+
+.contenedor-botones button{
+   width: 50%;
+   color: aliceblue;
+   background: transparent;
+   border: none;
+   cursor: pointer;
+   border-radius: 26px;
+}
+.contenedor-botones .boton-color{
+    color: black;
+    background: rgb(249, 249, 250);
+ }
+
+
+
+.login,
+.register{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+.email-cont ,
+.name-cont ,
+.contraseña-cont{
+    display: flex;
+    padding: 0px 40px;
+}
+
+.email-cont .label-email,
+.name-cont .label-name,
+.contraseña-cont .label-contraseña{
+  position: absolute;
+  justify-items: center;
+  transform: translateY(40px); 
+  transition: 0.5s;
+}
+.email-cont .label-email.cambio-label,
+.name-cont .label-name.cambio-label,
+.contraseña-cont .label-contraseña.cambio-label{
+
+        color: rgb(27, 200, 209);
+        transform: translateY(15px);
+        transition: 0.5s;
+ 
+}
+
+
+
+.email-cont input,
+.name-cont input,
+.contraseña-cont input{
+    position: relative;
+    width: 100%;
+    height: 30px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid aliceblue;
+    outline: none;
+    color: aliceblue;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.boton{
+    width: 60%;
+    height: 30px;
+    color: rgb(27, 200, 209);
+    font-size: larger;
+    border-radius: 26px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.boton:hover{
+
+    color: white;
+    background-color: rgb(27, 200, 209);
+    box-shadow: 0 0 5px  rgb(27, 200, 209),
+    0 0 15px  rgb(27, 200, 209),
+    0 0 30px  rgb(27, 200, 209);
+
+}
+
+
+.inactivo{
+    display: none;
+}
+

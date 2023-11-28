@@ -13,7 +13,8 @@ aRegister.addEventListener("click", cambioLogin);
 
 // eventos input
 inputs.forEach(function(input) {
-    input.addEventListener("input", cambioInput);
+    input.addEventListener("focus", cambioInput);
+    input.addEventListener("blur", reCambioInput);
 });
 
 
@@ -30,9 +31,14 @@ function cambioLogin(){
 
 function cambioInput(){
     const classList = this.classList;
+    const labelAsociado = document.querySelector(`label[for="${classList}"]`);
+    labelAsociado.classList.add("formulario-activo");
+     
+}
+function reCambioInput(){
+    const classList = this.classList;
     const valor = this.value.trim();
     const labelAsociado = document.querySelector(`label[for="${classList}"]`);
-
     if(valor!=""){
         labelAsociado.classList.add("formulario-activo");
     }else{
