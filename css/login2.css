@@ -116,6 +116,7 @@ width: 100%;
 }
 .formularios .formulario-login div input,
 .formularios .formulario-register div input{
+    position: relative;
     background-color: transparent; 
     border: none;
     border-bottom: 2px solid aliceblue;
@@ -184,6 +185,11 @@ width: 100%;
         margin: 0; 
 
     }
+    .contenedor-formulario .botones{
+       width: 200px;
+       height: 40px;
+       align-items: center;
+    }
     .contenedor-principal img{
         width: 100px;
         height: 100px;
@@ -201,7 +207,7 @@ width: 100%;
     .formularios .formulario-login,
     .formularios .formulario-register{
     width: 220px;
-    margin-top: 15px;
+    margin-top: 35px;
 }
 .formularios .formulario-login div input,
 .formularios .formulario-register div input{
@@ -220,3 +226,6 @@ width: 100%;
     width: 216px;
 }
 
+.iconos{
+    display: flex;
+}
